@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* #fdf2e9
+             #fae5d3
+             #eb984e
+             #cf711f
+               #e6a369
+        grays=#555555
+             =#333333
+             =#6f6f6f */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      *:focus {
+        outline: none;
+        box-shadow: 0 0 0.4rem #cf711f;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+      }
+      .container {
+        width: 70rem;
+        height: 50rem;
+        margin: 20vh auto 0 auto;
+        border-radius: 2rem;
+        background-color: #fdf2e9;
+        box-shadow: 0 0 0.4rem #cf711f;
+      }
+
+      .sign-up-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4.2rem;
+      }
+      label {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #cf711f;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+      }
+      .input {
+        font-size: 1.6rem;
+        font-weight: 500;
+        width: 100%;
+        /* justify-self: flex-end; */
+        background-color: #fae5d3;
+      }
+      .first-label {
+        margin-top: 7rem;
+      }
+      input {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.6rem;
+        font-family: inherit;
+        color: inherit;
+        border: 0.2rem solid #cf711f;
+        background-color: #fdf2e9;
+        border-radius: 0.8rem;
+        box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+      }
+      .btn {
+        border: none;
+        font-size: 3.2rem;
+        font-weight: 700;
+        padding: 1.6rem 3.2rem;
+        border-radius: 100rem;
+        background-color: #cf711f;
+        color: #fdf2e9;
+      }
+      .btn:hover,
+      .btn:active {
+        background-color: #5f310a;
+        color: #ffffff;
+      }
+      .registred {
+        text-align: end;
+        padding-right: 1.6rem;
+      }
+      .registred-link:link,
+      .registred-link:visited {
+        font-size: 1.6rem;
+        color: #cf711f;
+        text-decoration: none;
+      }
+      .registred-link:hover,
+      .registred-link:active {
+        color: #5f310a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" class="sign-up-form">
+        <div class="form-entity">
+          <label class="first-label" for="Name"
+            >Enter your name :
+
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter full name"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-entity">
+          <label for="Email"
+            >Enter your email :
+            <input
+              id="Email"
+              type="email"
+              placeholder="omnifood1@gmail.com"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-entity">
+          <label for="phone"
+            >Enter phone no :
+            <input
+              id="phone"
+              type="tel"
+              placeholder="1234-567-890"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-entity">
+          <label for="address">
+            Enter your address :
+            <input
+              id="address"
+              type="text"
+              name="address"
+              placeholder="address write here"
+              required
+            />
+          </label>
+        </div>
+        <button class="btn">Sign-up</button>
+      </form>
+      <p class="registred">
+        <a class="registred-link" href="sign-in.html"
+          >If you are exising customer &rarr;</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
